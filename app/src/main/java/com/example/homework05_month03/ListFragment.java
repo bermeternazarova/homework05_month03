@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Random;
 
 public class ListFragment extends Fragment implements ItemClickListener{
 
@@ -41,7 +44,7 @@ public class ListFragment extends Fragment implements ItemClickListener{
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                chats.add(0,new ChatModel(R.drawable.coffee,"YES, your coffee","and mine"));
+                chats.add(0,new ChatModel(R.drawable.coffee,"Новая ячейка ","coffee"));
                 adapter.notifyDataSetChanged();
             }
         });
@@ -58,15 +61,15 @@ public class ListFragment extends Fragment implements ItemClickListener{
 
     }
     private void setChats(){
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
-        chats.add(new ChatModel(R.drawable.coffee,"This mine coffee","and your coffee"));
+        chats.add(new ChatModel(R.drawable.teory02,"Теория","Начальный уровень"));
+        chats.add(new ChatModel(R.drawable.pazl,"Учим слова","Выучено 23/500"));
+        chats.add(new ChatModel(R.drawable.allfabet,"Пишем слова","Уровень новика 03"));
+        chats.add(new ChatModel(R.drawable.pazl2,"Составляем слова","Уровень новичка "));
+        chats.add(new ChatModel(R.drawable.audio,"Аудирование","Уровень новичка 02"));
+        chats.add(new ChatModel(R.drawable.pero,"Диктант","Уровень новичка"));
+        chats.add(new ChatModel(R.drawable.dictofone,"Произношение","Уровень новичка"));
+        chats.add(new ChatModel(R.drawable.testy,"Тесты","Проверь себя"));
+        chats.add(new ChatModel(R.drawable.djoystik,"Игры","Увлекательно"));
+        chats.add(new ChatModel(R.drawable.key,"Полная версия","Требуется авторизация"));
     }
 }
